@@ -9,7 +9,7 @@ function Projects() {
             description: "A personal portfolio showcasing my projects and achievements, built with React and Tailwind CSS.",
             technologies: ["React", "Tailwind CSS", "JavaScript"],
             image: portfolio, // Replace with your project image URL
-            link: "https://github.com/Sohil-Magixz/portfolio", // GitHub or Live demo link
+            link: "https://github.com/Sohil-Magixz/my-portfolio", // GitHub or Live demo link
         },
         {
             title: "E-Commerce App",
@@ -28,6 +28,7 @@ function Projects() {
     ];
 
     return (
+        <>
         <div id="projects" className="projects-section py-10 bg-slate-50">
             <div className="container mx-auto px-4">
                 <h2 className="text-2xl text-center text-black font-bold underline underline-offset-8 decoration-red-500 mb-8">Projects | Works</h2>
@@ -52,6 +53,8 @@ function Projects() {
                 </div>
             </div>
         </div>
+        <div className="h-[1px] border border-x-slate-600 w-[93%] mx-auto sm:mt-0 mt-10"></div>
+        </>
     );
 }
 
