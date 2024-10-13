@@ -1,6 +1,7 @@
 import React from "react";
 import ecommerece from "../assets/ecommerce.png";
 import portfolio from "../assets/portfolio.png";
+import foodstore from "../assets/foodstore.png"
 
 function Projects() {
     const projects = [
@@ -13,17 +14,17 @@ function Projects() {
         },
         {
             title: "E-Commerce App",
-            description: "An online e-commerce platform with shopping cart, payment gateway, and user authentication.",
+            description: "An online e-commerce platform made for an Online Web Development Competetion",
             technologies: ["HTML", "Tailwind CSS", "JavaScript"],
             image: ecommerece,
             link: "https://sohil-magixz.github.io/Skins-E-commerece-Webpage/",
         },
         {
-            title: "Task Manager",
-            description: "A task management application that helps users track their daily tasks and progress.",
-            technologies: ["Java", "Spring Boot", "MySQL"],
-            image: "https://via.placeholder.com/300x200",
-            link: "https://github.com/Sohil-Magixz/task-manager",
+            title: "Food Store",
+            description: "Food Store Web Page, One of my First Web Development Project, which is Responsive as well",
+            technologies: ["HTML", "Tailwind CSS", "JavaScript"],
+            image: foodstore,
+            link: "https://sohil-magixz.github.io/Food-Store/",
         },
     ];
 

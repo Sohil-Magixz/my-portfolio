@@ -32,8 +32,8 @@ function Technology() {
 
     return (
         <>
-            <div id="skills-technologies" className=" skills_and_technology-section-3 mx-auto h-[80vh] w-[90%] bg-slate-50 rounded-[15px] pb-16">
-                <div className="box-container h-auto min-h-[100%] w-full mx-auto mt-16  rounded-[15px] bg-[#262525]  bg-cover bg-no-repeat bg-right px-6"  >
+            <div id="skills-technologies" className=" skills_and_technology-section-3 mx-auto  h-auto lg:h-[80vh] w-[90%] bg-slate-50 rounded-[15px] pb-16">
+                <div className="box-container min-h-[100%] w-full mx-auto mt-16  rounded-[15px] bg-[#262525]  bg-cover bg-no-repeat bg-right px-6"  >
                     <h1 className="text-center text-white pt-6 text-2xl font-bold underline underline-offset-[7px] decoration-red-500">
                         Skills | Technology
                     </h1>
