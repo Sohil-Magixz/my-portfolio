@@ -7,7 +7,7 @@ import './index.css'
 function App(){
   return (
     <div className="bg-slate-50">
-        <Header/>
+      <Header/>
       <main>
         <Main/>
       </main>

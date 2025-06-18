@@ -1,5 +1,6 @@
 import React from "react";
 import my_pic from "../assets/me.png";
+import Header from "./Header.jsx";
 
 function Home(){
     return (

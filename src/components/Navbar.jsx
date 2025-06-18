@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <>
-    <div className=" h-[80px]  w-[200%] hidden sm:inlineflex lg:inline-flex flex-wrap justify-center items-center  overflow-x-auto transition-">
+    <div className=" h-[80px]  w-[100%] hidden sm:inlineflex lg:inline-flex flex-wrap justify-center items-center  overflow-x-auto transition-">
       <ul className="sm:inline-flex flex-wrap justify-center items-center h-full w-[200%] hidden overflow-auto" >
         {items.map((item, index) => {
           const isFirst = 0;
