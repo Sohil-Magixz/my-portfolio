@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Hamburger() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   const items = [
     { link: "home", prop: "Home" },
     { link: "aboutme", prop: "About Me" },
@@ -11,41 +9,44 @@ function Hamburger() {
     { link: "contact", prop: "Contact" },
   ];
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <>
-      {/* Hamburger Icon */}
-      <div className="w-full flex justify-end lg:hidden">
-        <button onClick={toggleMenu} className="p-2">
+      <div className="w-[50%] flex flex-col justify-center items-end lg:hidden">
+        <input type="checkbox" id="menu-toggle" className="hidden" />
+        <label htmlFor="menu-toggle">
           <img
             src="https://img.icons8.com/?size=100&id=36389&format=png&color=1A1A1A"
-            className="h-8 w-8 cursor-pointer"
+            className="lg:hidden h-[30px] cursor-pointer"
             alt="Menu"
           />
-        </button>
+        </label>
       </div>
 
-      {/* Dropdown Menu */}
-      {menuOpen && (
-        <nav className="absolute right-4 mt-2 bg-gray-900 rounded-md shadow-lg z-50">
-          <ul className="flex flex-col items-start text-white px-4 py-2 space-y-2">
-            {items.map((item, index) => (
-              <li key={index} className="text-base">
-                <a
-                  href={`#${item.link}`}
-                  onClick={toggleMenu}
-                  className="hover:text-blue-300 transition-colors duration-300"
-                >
-                  {item.prop}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+      {/* Navigation Menu */}
+      <nav className="hamburger menu bg-blue-300 lg:hidden hidden">
+        <ul>
+          {items.map((item, index) => (
+            <li key={index} className="text-white bg-red-500 flex flex-col justify-center items-start">
+              <a href={`#${item.link}`}>{item.prop}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {/* CSS to toggle menu visibility */}
+      <style jsx>{`
+        #menu-toggle {
+          display: none; /* Hide the checkbox */
+        }
+
+        #menu-toggle:checked + nav {
+          display: block; /* Show menu when checkbox is checked */
+        }
+
+        nav {
+          display: none; /* Hide menu by default */
+        }
+      `}</style>
     </>
   );
 }
