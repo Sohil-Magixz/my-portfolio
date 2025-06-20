@@ -3,6 +3,7 @@ import ecommerece from "../assets/ecommerce.png";
 import portfolio from "../assets/portfolio.png";
 import foodstore from "../assets/foodstore.png"
 import jobseek from "../assets/jobseek.png";
+import weather from "../assets/weather.png"
 
 function Projects() {
     const projects = [
@@ -22,6 +23,20 @@ function Projects() {
             image: jobseek,
             link: "https://jobseek-in.vercel.app/",
         },
+        {
+            title: "Weather App",
+            description: "A responsive React-based weather application that fetches real-time weather data from the OpenWeatherMap API. Built using Vite and styled with Tailwind CSS, it allows users to search for any city and view current temperature, weather conditions, and more.",
+            technologies: [
+                "React",
+                "Tailwind CSS",
+                "JavaScript",
+                "OpenWeatherMap API",
+                "Vite"
+            ],
+            image: weather, // replace with your actual imported image
+            link: "https://sohil-magixz.github.io/Weather-App"
+        },
+
         {
             title: "Portfolio Website",
             description: "A sleek and responsive personal portfolio built with React and Tailwind CSS. It showcases my projects, technical skills, and achievements in a clean, modern layout with smooth navigation and UI components.",
